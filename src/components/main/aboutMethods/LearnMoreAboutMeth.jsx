@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 export const LearnMore = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center py-12 md:py-16 px-6 lg:px-20 bg-[#F5F7FA]">
+    <div className="flex flex-col lg:flex-row justify-between items-center py-12 md:py-16 px-6 lg:px-100 bg-[#F5F7FA]">
       <div className="mb-10 lg:mb-0 lg:mr-12">
         <img
           src="learn-more.svg"
           alt="Алгоритмы оптимизации"
-          className="w-full max-w-lg lg:w-170 h-auto"
+          className="w-full lg:w-170 h-auto"
         />
       </div>
 
@@ -55,23 +57,27 @@ export const LearnMore = () => {
             </p>
           </div>
         </div>
-
-        <button className="mt-8 text-blue-600 hover:text-blue-800 font-medium flex items-center">
-          Подробнее о методах
-          <svg
-            className="w-5 h-5 ml-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        <div>
+          <Link
+            to={"/methods"}
+            className="mt-8 text-green-600 hover:text-green-800 font-medium flex items-center md:justify-center"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            />
-          </svg>
-        </button>
+            Подробнее о методах
+            <svg
+              className="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </Link>
+        </div>
       </div>
     </div>
   );

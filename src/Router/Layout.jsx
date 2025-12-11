@@ -8,23 +8,23 @@ export function Layout() {
   return (
     <div>
       {!isHomePage && (
-        <header className="sticky top-0 z-50 py-5 px-6 lg:px-25 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <header className="sticky top-0 z-50 py-5 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
-            <div className="flex items-center">
+            <Link to={"/"} className="flex items-center">
               <img
                 src="logo.svg"
                 alt="Логотип Вектор Цели"
                 className="w-12 h-12 lg:w-15 lg:h-auto"
               />
               <div className="ms-3 lg:ms-4">
-                <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
+                <h2 className="font-bold text-xl lg:text-2xl text-gray-800">
                   Вектор Цели
                 </h2>
                 <p className="text-sm text-gray-600 hidden lg:block">
                   Оптимизация бизнес-процессов
                 </p>
               </div>
-            </div>
+            </Link>
 
             <div className="flex space-x-10">
               <nav className="hidden lg:flex items-center space-x-8">
@@ -47,12 +47,6 @@ export function Layout() {
                   Кейсы
                 </a>
               </nav>
-
-              <div className="flex items-center space-x-4">
-                <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-lg font-medium  shadow-sm hover:shadow-md transform hover:-translate-y-0.5 duration-300 transition-all">
-                  Войти
-                </button>
-              </div>
             </div>
           </div>
         </header>

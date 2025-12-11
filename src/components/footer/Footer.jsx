@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white pt-12 pb-8 px-6 relative bottom-0 w-full">
@@ -29,12 +31,12 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/methods"}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Методы
-                </a>
+                </Link>
               </li>
               <li>
                 <a

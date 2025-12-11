@@ -1,6 +1,6 @@
 export const GoToStart = () => {
   return (
-    <div className="py-8 md:py-12 lg:py-15 px-4 sm:px-6 lg:px-8 xl:px-30 bg-[#F5F7FA]">
+    <div className="py-8 md:py-12 lg:py-15 px-4 sm:px-6 lg:px-8 xl:px-150 bg-[#F5F7FA]">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12">
         <div className="max-w-full lg:max-w-lg order-2 lg:order-1">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 text-center lg:text-left">
@@ -46,7 +46,7 @@ export const GoToStart = () => {
           <img
             src="Illustration.svg"
             alt="Визуализация процесса оптимизации"
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-100 xl:w-150 h-auto relative z-10 drop-shadow-lg mx-auto lg:mx-0"
+            className="w-full sm:max-w-sm md:max-w-md lg:w-190 xl:w-120 h-auto relative z-10 drop-shadow-lg mx-auto lg:mx-0"
           />
         </div>
       </div>
