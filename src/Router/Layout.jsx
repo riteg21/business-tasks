@@ -5,9 +5,17 @@ export function Layout() {
   const { pathname } = useLocation();
 
   const isHomePage = useMemo(() => pathname === "/", [pathname]);
+  const isOptimizationPage = useMemo(
+    () => pathname === "/optimization",
+    [pathname]
+  );
+  const showHeader = useMemo(
+    () => !isHomePage && !isOptimizationPage,
+    [isHomePage, isOptimizationPage]
+  );
   return (
     <div>
-      {!isHomePage && (
+      {showHeader && (
         <header className="sticky top-0 z-50 py-5 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <Link to={"/"} className="flex items-center">

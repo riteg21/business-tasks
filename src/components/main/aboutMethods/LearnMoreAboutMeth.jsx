@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const LearnMore = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center py-12 md:py-16 px-6 lg:px-100 bg-[#F5F7FA]">
+    <div className="flex flex-col lg:flex-row justify-between items-center py-12 md:py-16 px-6 lg:px-20 bg-[#F5F7FA]">
       <div className="mb-10 lg:mb-0 lg:mr-12">
         <img
           src="learn-more.svg"

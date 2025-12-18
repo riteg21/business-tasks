@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export const GoToStart = () => {
   return (
-    <div className="py-8 md:py-12 lg:py-15 px-4 sm:px-6 lg:px-8 xl:px-150 bg-[#F5F7FA]">
+    <div className="py-8 md:py-12 lg:py-15 px-4 sm:px-6 lg:px-8 xl:px-40 bg-[#F5F7FA]">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12">
         <div className="max-w-full lg:max-w-lg order-2 lg:order-1">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 text-center lg:text-left">
@@ -35,9 +37,12 @@ export const GoToStart = () => {
           </div>
 
           <div className="mt-8 lg:mt-10 flex justify-center lg:justify-start">
-            <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 sm:px-8 sm:py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto text-sm sm:text-base">
+            <Link
+              to={"/optimization"}
+              className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 sm:px-8 sm:py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
+            >
               Начать оптимизацию
-            </button>
+            </Link>
           </div>
         </div>
 
