@@ -1,6 +1,6 @@
 import { NavOptiBar } from "./leftSideBar/Bar";
 import TextType from "./textType/TextType";
-import { useFilter } from "../../../context/filterContext.jsx/FilterContext";
+import { useFilter } from "../../../context/filterContext/FilterContext";
 
 export const MainOptiPage = () => {
   const { activeCategory, whichMethodComponent } = useFilter();

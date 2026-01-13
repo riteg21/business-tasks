@@ -1,5 +1,5 @@
 import { filterItems } from "../../../../../data/filterItemsOpti";
-import { useFilter } from "../../../../../context/filterContext.jsx/FilterContext";
+import { useFilter } from "../../../../../context/filterContext/FilterContext";
 
 export const Filter = () => {
   const { handleCategoryClick, activeCategory } = useFilter();
